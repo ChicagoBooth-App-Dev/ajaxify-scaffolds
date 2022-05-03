@@ -1,0 +1,28 @@
+<tr>
+  <td><p>
+    <%= @movie.title %>
+  </p></td>
+
+  <td><p>
+    <%= @movie.year %>
+  </p></td>
+
+  <td><p>
+    <%= @movie.director_id %>
+  </p></td>
+
+  <td><p>
+    <%= @movie.description %>
+  </p></td>
+
+  <td><p>
+    <%= @movie.duration %>
+  </p></td>
+
+  
+
+  
+
+  <%= link_to 'Edit', edit_movie_path(@movie) %> |
+  <%= link_to 'Back', movies_path %>
+</tr>

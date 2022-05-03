@@ -18,7 +18,7 @@
 
   <%= render "form", movie: Movie.new %>
 
-  <tbody>
+  <tbody id = "table_of_movies">
     <% @movies.each do |movie| %>
       <tr id = <%= dom_id(movie) %>>
         <td><%= movie.title %></td>

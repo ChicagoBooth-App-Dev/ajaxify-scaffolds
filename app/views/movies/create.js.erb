@@ -1,0 +1,8 @@
+
+var added_movie = $("<%= j(render @movie) %>");
+
+$("#table_of_movies").prepend(added_movie);
+
+added_movie.slideDown();
+
+console.log(added_movie)
